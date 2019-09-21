@@ -1,32 +1,42 @@
-*{
+/* *{
   outline:black solid 1px;
-}
+} */
 body{
   max-width: 900px;
   margin: 0 auto;
 }
 hr {
-  background-image: url(img/linestart.png);
+  background-image: url(/img/linestart.png);
   background-repeat: repeat-x;
   background-color: transparent;
   background-position: center;
+  border: none;
+  height: 10px;
+  
 }
+
 /* Header */
 header{
   overflow: auto;
 }
 header div{
+  margin-top: 1em;
   width: 25%;
   float: left;
 }
 header div img{
   float:left;
 }
+header div h2, header div p {
+  margin-left: 22%;
+}
 h2{
+  font-family: 'Yellowtail', cursive;
   font-size: 2em;
 }
 header div p{
-  font-size:.75em;
+  text-transform: uppercase;
+  font-size:.6em;
 }
 header ul{
   float:right;
@@ -35,24 +45,123 @@ header ul{
 }
 header ul li{
   display:inline-block;
+  margin-left: -1px;
 }
+header ul li:nth-child(5) {
+  margin-right: -3px;
+}
+
+header ul li:nth-child(6) {
+  margin-right: .3em;
+}
+
 /* Main */
+
+/* MainHeader */
 h1{
-  font-weight: bolder;
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
   font-size: 2.5em;
+  margin-top: .3em;
+  margin-bottom:.2em;
+}
+#mainheader p {
+  text-transform: uppercase;
+  font-size: .75em;
+  font-family: 'Dosis', sans-serif;
+  color:rgb(189, 189, 189);
 }
 #mainheader div{
   float: left;
 }
 #mainheader ul{
-   display:inline-block;
-   float:right;
+  display:inline-block;
+  float:right;
 }
 #mainheader ul li{
-  font-size: .5em;
+  font-family: 'Dosis', sans-serif;
+  font-size: .7em;
+  color:rgb(189, 189, 189);
   display:inline-block;
   margin-bottom: 3em;
   margin-top:5em;
 }
+/* Article */
+article p {
+  margin: 1em 0;
+  text-indent: 1em;
+  font-size: 20px;
+  color:rgb(126, 126, 126);
+}
+
+/* Ingredients */
+#ingredients {
+  background-image: url(/img/list-bg.png);
+  height: 300px;
+  overflow: auto;
+}
+#ingredients ul{
+  margin-left: 3.75em;
+  vertical-align: center;
+}
+#ingredients ul li {
+  margin-top: 2.25em;
+  display:inline-block;
+  width:40%;
+}
+
+#ingredients ul li input{
+
+  margin: .70em 0;
+}
+#ingredients ul li span{
+  vertical-align: top;
+  color:rgb(78, 78, 78);
+  font-family: cursive;
+  font-size: 1.25em;
+  /* margin: .25em; */
+}
+/* #ingredients ul li {
+  display:inline-block;
+  margin: 2em;
+  align-content: center;
+} */
 
 /* footer */
+footer img:first-child {
+  float: left;
+
+}
+footer div {
+  margin-left: 6em;
+}
+
+footer h3 {
+  font-weight: bolder;
+  color:rgb(78, 78, 78);
+  font-size: 22px;
+  margin-bottom: .5em;
+}
+footer > div > p {
+  display: inline-block;
+  font-size: 18px;
+  width:70%;
+  color:rgb(126, 126, 126);
+}
+footer button {
+  display: inline-block;
+  margin-left: 9em;
+  margin-bottom: 2em;
+  background-color: rgb(235, 55, 0);
+  padding: .5em;
+  color: whitesmoke;
+}
+footer img:last-of-type {
+
+  margin: 4em 0 2em 47%;
+}
+footer > p{
+  text-align: center;
+  color:rgb(189, 189, 189);
+  margin-bottom: 1em;
+}
